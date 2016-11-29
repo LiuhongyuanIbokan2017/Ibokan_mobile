@@ -205,7 +205,9 @@
 			}
 			else{
 					swiperAnimate(swiper);
-					wordbox.innerHTML='';
+					wordbox.innerHTML='';	
+					clearTimeout(time);
+					count=0;
 					
 			}
 			if(swiper.activeIndex==11){
@@ -256,13 +258,14 @@
   	})
  }
  var count=0;
- var wordStr="战盟与合作伙伴关系是博看文思也无持续发展的重要保证，博看文思已经与行业领导者建立了战略合作伙伴关系，紧密的合作伙伴关系，确保博看文思能够满足客户的各种需求，并为客户提供最优秀的解决方案。";
+ var time=null;
+ var wordStr="战略联盟与合作伙伴关系是博看文思也无持续发展的重要保证，博看文思已经与行业领导者建立了战略合作伙伴关系，紧密的合作伙伴关系，确保博看文思能够满足客户的各种需求，并为客户提供最优秀的解决方案。";
  var wordbox=document.getElementById('slide10_word');
  function typeword(){
  	console.log(1);
  	wordbox.innerHTML+=wordStr.charAt(count);
  	count++;
- 	var time=setTimeout(typeword,100);
+ 	time=setTimeout(typeword,60);
  	if(count==wordStr.length){
  		clearTimeout(time);
  		count=0;
