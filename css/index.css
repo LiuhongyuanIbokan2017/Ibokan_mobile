@@ -234,13 +234,14 @@ html,body{
 .slide9{
 	background: black;
 }
+
 .slide9 div img:nth-child(even){
-	margin-left: 7%;
-	margin-top: 5%;
+	margin-left: 10%;
+	margin-top: 10%;
 }
 .slide9 div img:nth-child(odd){
-	margin-left: 7%;
-	margin-top: 5%;
+	margin-left: 15%;
+	margin-top: 10%;
 }
 /*第十屏*/
 .slide10{
